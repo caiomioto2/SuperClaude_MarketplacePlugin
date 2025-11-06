@@ -1,15 +1,9 @@
 {
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "./scripts/session-init.sh",
-            "timeout": 10
-          }
-        ]
-      }
-    ]
-  }
+  "SessionStart": [
+    {
+      "type": "command",
+      "command": "echo 'SuperClaude Framework activated - Use /agent, /research, or /index-repo to get started'",
+      "timeout": 10
+    }
+  ]
 }

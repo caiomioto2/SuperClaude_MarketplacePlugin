@@ -1,21 +1,15 @@
 {
   "name": "superclaude",
-  "owner": "SuperClaude Community",
-  "author": "SuperClaude Community",
+  "author": {
+    "name": "SuperClaude Community",
+    "url": "https://github.com/SuperClaude-Org"
+  },
   "version": "4.1.6",
-  "description": "Transform Claude Code into a structured development platform with PM Agent orchestration, Deep Research, and repository indexing",
+  "description": "A comprehensive meta-programming framework that enhances Claude Code with intelligent agents, behavioral modes, and systematic workflows. Features include confidence-driven development (≥90% threshold), autonomous web research with adaptive planning, 94% token reduction through smart indexing, and integration with 8 MCP servers for enhanced capabilities.",
   "homepage": "https://superclaude.netlify.app/",
   "repository": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
   "license": "MIT",
   "keywords": ["productivity", "orchestration", "research", "project-management", "code-quality", "testing", "workflow", "automation", "mcp-integration", "ai-agents", "confidence-check", "token-optimization"],
-  "plugins": [
-    {
-      "id": "superclaude",
-      "name": "SuperClaude Framework",
-      "description": "A comprehensive meta-programming framework that enhances Claude Code with intelligent agents, behavioral modes, and systematic workflows. Features include confidence-driven development (â‰¥90% threshold), autonomous web research with adaptive planning, 94% token reduction through smart indexing, and integration with 8 MCP servers for enhanced capabilities.",
-      "version": "4.1.6"
-    }
-  ],
   "commands": [
     {
       "name": "agent",
@@ -59,29 +53,6 @@
       "description": "Pre-implementation confidence assessment (≥90% required)",
       "path": "skills/confidence-check"
     }
-  ],
-  "hooks": {
-    "SessionStart": [
-      {
-        "type": "command",
-        "command": "./scripts/session-init.sh",
-        "timeout": 10,
-        "description": "Auto-activate SC Agent orchestrator"
-      }
-    ]
-  },
-  "mcp_integrations": [
-    "tavily",
-    "context7",
-    "serena",
-    "sequential",
-    "mindbase",
-    "playwright",
-    "magic",
-    "chrome-devtools"
-  ],
-  "requirements": {
-    "claude_code_version": ">=1.0.0"
-  }
+  ]
 }
 
