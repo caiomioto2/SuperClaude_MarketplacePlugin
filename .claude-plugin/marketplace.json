@@ -1,0 +1,143 @@
+{
+  "marketplace": {
+    "name": "SuperClaude Framework",
+    "tagline": "Transform Claude Code into a structured development platform",
+    "description": "A comprehensive meta-programming framework that enhances Claude Code with intelligent agents, behavioral modes, and systematic workflows. Features include confidence-driven development (â‰¥90% threshold), autonomous web research with adaptive planning, 94% token reduction through smart indexing, and integration with 8 MCP servers for enhanced capabilities.",
+    "category": "productivity",
+    "subcategories": [
+      "orchestration",
+      "research",
+      "optimization",
+      "testing"
+    ],
+    "features": [
+      {
+        "title": "PM Agent Orchestration",
+        "description": "Confidence-driven workflow with ≥90% threshold ensures high-quality implementations",
+        "icon": "🤖"
+      },
+      {
+        "title": "Deep Research",
+        "description": "Autonomous web research with adaptive planning, multi-hop reasoning (up to 5 iterations), and quality scoring",
+        "icon": "🔬"
+      },
+      {
+        "title": "Smart Indexing",
+        "description": "94% token reduction (58K → 3K) through intelligent repository analysis and context optimization",
+        "icon": "📊"
+      },
+      {
+        "title": "MCP Integration",
+        "description": "Seamless integration with 8 MCP servers including Tavily (search), Context7 (docs), Serena (memory), and Sequential (reasoning)",
+        "icon": "🔧"
+      },
+      {
+        "title": "Confidence Checking",
+        "description": "Pre-implementation assessment prevents wrong-direction work with 25-250x token savings ROI",
+        "icon": "✓"
+      },
+      {
+        "title": "Self-Review",
+        "description": "Post-implementation validation with evidence-based checks and reflexion for continuous learning",
+        "icon": "🔍"
+      }
+    ],
+    "screenshots": [
+      {
+        "url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/master/docs/assets/pm-agent-workflow.png",
+        "caption": "PM Agent orchestration workflow with confidence checks"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/master/docs/assets/deep-research.png",
+        "caption": "Deep Research with adaptive planning and multi-hop reasoning"
+      },
+      {
+        "url": "https://raw.githubusercontent.com/SuperClaude-Org/SuperClaude_Framework/master/docs/assets/repo-indexing.png",
+        "caption": "Repository indexing showing 94% token reduction"
+      }
+    ],
+    "video_url": "https://www.youtube.com/watch?v=YOUR_VIDEO_ID",
+    "documentation_url": "https://superclaude.netlify.app/",
+    "support_url": "https://github.com/SuperClaude-Org/SuperClaude_Framework/issues",
+    "pricing": {
+      "type": "free",
+      "model": "open-source"
+    },
+    "stats": {
+      "commands": 3,
+      "agents": 16,
+      "modes": 7,
+      "mcp_servers": 8,
+      "token_reduction": "94%",
+      "confidence_threshold": "90%"
+    },
+    "use_cases": [
+      {
+        "title": "Quality-First Development",
+        "description": "Ensure ≥90% confidence before implementation, preventing costly mistakes and rework"
+      },
+      {
+        "title": "Research-Intensive Projects",
+        "description": "Autonomous web research with adaptive planning handles complex information gathering"
+      },
+      {
+        "title": "Large Codebases",
+        "description": "94% token reduction allows working with repositories that would otherwise exceed context limits"
+      },
+      {
+        "title": "Systematic Workflows",
+        "description": "PM Agent orchestration provides structure for complex multi-step tasks"
+      }
+    ],
+    "requirements": {
+      "claude_code": ">=1.0.0",
+      "optional_mcp": [
+        "tavily (web search)",
+        "context7 (documentation)",
+        "serena (memory)",
+        "sequential (reasoning)"
+      ]
+    },
+    "installation": {
+      "type": "project-local",
+      "steps": [
+        "Clone the repository",
+        "Navigate to SuperClaude_Framework directory",
+        "Start Claude Code (auto-detects .claude-plugin/)"
+      ]
+    },
+    "tags": ["productivity", "orchestration", "research", "project-management", "code-quality", "testing", "workflow", "automation", "mcp-integration", "ai-agents", "confidence-check", "token-optimization"],
+    "version_history": [
+      {
+        "version": "4.1.6",
+        "date": "2025-01-05",
+        "changes": [
+          "Marketplace plugin structure",
+          "Enhanced metadata for discoverability",
+          "Improved documentation"
+        ]
+      },
+      {
+        "version": "4.0.0",
+        "date": "2024-12-01",
+        "changes": [
+          "TypeScript plugin migration",
+          "Project-local auto-detection",
+          "SessionStart hook auto-activation",
+          "3 core plugins (PM, Research, Index)"
+        ]
+      }
+    ],
+    "community": {
+      "github_stars": "300+",
+      "contributors": "15+",
+      "discord": "https://discord.gg/superclaude",
+      "discussions": "https://github.com/SuperClaude-Org/SuperClaude_Framework/discussions"
+    },
+    "social": {
+      "twitter": "@SuperClaude_Org",
+      "website": "https://superclaude.netlify.app/"
+    }
+  }
+}
+

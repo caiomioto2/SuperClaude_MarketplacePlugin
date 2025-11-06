@@ -1,0 +1,87 @@
+{
+  "name": "superclaude",
+  "owner": "SuperClaude Community",
+  "author": "SuperClaude Community",
+  "version": "4.1.6",
+  "description": "Transform Claude Code into a structured development platform with PM Agent orchestration, Deep Research, and repository indexing",
+  "homepage": "https://superclaude.netlify.app/",
+  "repository": "https://github.com/SuperClaude-Org/SuperClaude_Framework",
+  "license": "MIT",
+  "keywords": ["productivity", "orchestration", "research", "project-management", "code-quality", "testing", "workflow", "automation", "mcp-integration", "ai-agents", "confidence-check", "token-optimization"],
+  "plugins": [
+    {
+      "id": "superclaude",
+      "name": "SuperClaude Framework",
+      "description": "A comprehensive meta-programming framework that enhances Claude Code with intelligent agents, behavioral modes, and systematic workflows. Features include confidence-driven development (â‰¥90% threshold), autonomous web research with adaptive planning, 94% token reduction through smart indexing, and integration with 8 MCP servers for enhanced capabilities.",
+      "version": "4.1.6"
+    }
+  ],
+  "commands": [
+    {
+      "name": "agent",
+      "description": "Session orchestrator with confidence-driven workflow (≥90% threshold)",
+      "file": "commands/agent.md",
+      "category": "orchestration"
+    },
+    {
+      "name": "research",
+      "description": "Deep research with adaptive planning and multi-hop reasoning",
+      "file": "commands/research.md",
+      "category": "research"
+    },
+    {
+      "name": "index-repo",
+      "description": "Repository indexing for 94% token reduction (58K → 3K)",
+      "file": "commands/index-repo.md",
+      "category": "optimization"
+    }
+  ],
+  "agents": [
+    {
+      "name": "deep-research",
+      "description": "Autonomous web research with Tavily/Context7 integration",
+      "file": "agents/deep-research.md"
+    },
+    {
+      "name": "repo-index",
+      "description": "Repository structure analysis and file shortlisting",
+      "file": "agents/repo-index.md"
+    },
+    {
+      "name": "self-review",
+      "description": "Post-implementation validation and reflexion",
+      "file": "agents/self-review.md"
+    }
+  ],
+  "skills": [
+    {
+      "name": "confidence-check",
+      "description": "Pre-implementation confidence assessment (≥90% required)",
+      "path": "skills/confidence-check"
+    }
+  ],
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "./scripts/session-init.sh",
+        "timeout": 10,
+        "description": "Auto-activate SC Agent orchestrator"
+      }
+    ]
+  },
+  "mcp_integrations": [
+    "tavily",
+    "context7",
+    "serena",
+    "sequential",
+    "mindbase",
+    "playwright",
+    "magic",
+    "chrome-devtools"
+  ],
+  "requirements": {
+    "claude_code_version": ">=1.0.0"
+  }
+}
+
